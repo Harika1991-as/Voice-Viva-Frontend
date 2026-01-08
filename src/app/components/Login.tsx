@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { ArrowLeft, Lock, User } from 'lucide-react';
 import { apiRequest } from '../../api/api';
 import { UserRole } from '../App';
-import Footer from './Footer';
-
 interface LoginProps {
   onLogin: (role: UserRole, studentReg?: string) => void;
   onBack: () => void;
@@ -128,8 +126,7 @@ export default function Login({ onLogin, onBack }: LoginProps) {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
+      
     </div>
   );
 }

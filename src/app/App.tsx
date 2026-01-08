@@ -7,6 +7,7 @@ import Instructions from './components/Instructions';
 import MicrophonePermission from './components/MicrophonePermission';
 import VivaExamFlow from './components/VivaExamFlow';
 import ThankYouPage from './components/ThankYouPage';
+import Footer from './components/Footer';
 
 export type UserRole = 'admin' | 'student' | null;
 
@@ -152,5 +153,17 @@ useEffect(() => {
     }
   };
 
-  return <div className="min-h-screen bg-white">{renderScreen()}</div>;
+  return (
+  <div className="min-h-screen bg-white flex flex-col">
+
+    {/* All screens */}
+    <div className="flex-1">
+      {renderScreen()}
+    </div>
+
+    {/* Global Footer */}
+    <Footer />
+
+  </div>
+);
 }

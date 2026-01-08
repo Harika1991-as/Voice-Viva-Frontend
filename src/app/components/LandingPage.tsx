@@ -1,6 +1,4 @@
 import { Mic, Headphones, CheckCircle, Shield, Zap, Users } from 'lucide-react';
-import Footer from './Footer';
-
 interface LandingPageProps {
   onNavigate: () => void;
 }
@@ -177,8 +175,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
         }
       `}</style>
 
-      {/* Footer goes here */}
-      <Footer />
+      
     </div>
    
   );

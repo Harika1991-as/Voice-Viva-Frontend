@@ -66,6 +66,7 @@ export default function ThankYouPage({ onFinish }: ThankYouPageProps) {
           Return to Dashboard
         </button>
       </div>
+      
     </div>
   );
 }
