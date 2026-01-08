@@ -1,4 +1,5 @@
 import { Mic, Headphones, CheckCircle, Shield, Zap, Users } from 'lucide-react';
+import Footer from './Footer';
 
 interface LandingPageProps {
   onNavigate: () => void;
@@ -147,6 +148,38 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
           animation-delay: 1s;
         }
       `}</style>
+            <style>{`
+        @keyframes blob {
+          0% {
+            transform: translate(0px, 0px) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+          }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+        .animation-delay-1000 {
+          animation-delay: 1s;
+        }
+      `}</style>
+
+      {/* Footer goes here */}
+      <Footer />
     </div>
+   
   );
 }
